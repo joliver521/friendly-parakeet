@@ -19,6 +19,11 @@ var generatePassword = function () {
     alert('Password length must be between 8 and 128 characters. Try again.');
     var passwordLength = (prompt('How many characters would you like your password to be?'));
   }
+
+  // let user know how many characters they chose
+  alert(`Your password will have ${passwordLength} characters.`);
+
+
 };
 
 // Get references to the #generate element
