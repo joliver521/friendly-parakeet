@@ -72,6 +72,11 @@ var generatePassword = function () {
 
   // console.log("Main password: ", mainPassword)
 
+  // console.log("Main password: ", mainPassword)
+  // end function and return value
+  // used join method with empty strings so there are no spaces
+  return mainPassword.join('');
+
 };
 
 // Get references to the #generate element
