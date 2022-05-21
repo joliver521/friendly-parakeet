@@ -23,7 +23,15 @@ var generatePassword = function () {
   // let user know how many characters they chose
   alert(`Your password will have ${passwordLength} characters.`);
 
-
+  // determine parameters of password
+  // does the user want special characters in their password?
+  var getSpecialChar = confirm('Click OK to confirm that you want special characters.')
+  // does the user want numbers in their password?
+  var getNumber = confirm('Click OK to confirm that you want numbers.')
+  // does the user want lowercase letters in their password?
+  var getLowercase = confirm('Click OK to confirm that you want lowercase letters.')
+  // does the user want uppercase letters in their password?
+  var getUppercase = confirm('Click OK to confirm that you want uppercase letters.')
 };
 
 // Get references to the #generate element
