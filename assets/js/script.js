@@ -58,6 +58,20 @@ var generatePassword = function () {
   if (getUppercase === true) {
     userCharacters = userCharacters.concat(upperCase);
   }
+
+  // mainPassword empy array
+  var mainPassword = [];
+
+  // for loop to randomize password
+  for (var i = 0; i < passwordLength; i++) {
+    var index = (Math.floor(Math.random() * userCharacters.length));
+    var char = userCharacters[index];
+
+    mainPassword.push(char);
+  }
+
+  // console.log("Main password: ", mainPassword)
+
 };
 
 // Get references to the #generate element
