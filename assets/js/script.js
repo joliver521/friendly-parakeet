@@ -41,6 +41,23 @@ var generatePassword = function () {
     var getLowercase = confirm('Click OK to confirm that you want lowercase letters.');
     var getUppercase = confirm('Click OK to confirm that you want uppercase letters.');
   }
+
+  // empty array
+  var userCharacters = [];
+
+  // if statements to check if user answers are true
+  if (getSymbol === true) {
+    userCharacters = userCharacters.concat(symbols);
+  }
+  if (getNumber === true) {
+    userCharacters = userCharacters.concat(number);
+  }
+  if (getLowercase === true) {
+    userCharacters = userCharacters.concat(lowerCase);
+  }
+  if (getUppercase === true) {
+    userCharacters = userCharacters.concat(upperCase);
+  }
 };
 
 // Get references to the #generate element
