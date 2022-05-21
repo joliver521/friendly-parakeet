@@ -12,12 +12,12 @@ var upperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M'
 // start function to generate password
 var generatePassword = function () {
   // prompt user for password criteria
-  var passwordLength = (prompt('Please choose a password length between 8 and 128'));
+  var passwordLength = (prompt('Please choose a password between 8 and 128 characters'));
 
   // while loop to if passwordLength criteria has been met
   while (passwordLength < 8 || passwordLength > 128) {
-    alert('Password length must be between 8 and 128 characters. Try again.');
-    var passwordLength = (prompt('How many characters would you like your password to be?'));
+    alert('Oops! Your password needs to be between 8 and 128 characters. Try again.');
+    var passwordLength = (prompt('Please choose a password between 8 and 128 characters'));
   }
 
   // let user know how many characters they chose
